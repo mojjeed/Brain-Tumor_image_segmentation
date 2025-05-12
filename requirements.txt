@@ -1,0 +1,8 @@
+numpy
+pandas
+opencv-python
+matplotlib
+scikit-learn
+tensorflow==2.10.0   # or torch==1.13.1+cpu
+nibabel
+SimpleITK
