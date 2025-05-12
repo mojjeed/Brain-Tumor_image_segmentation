@@ -95,6 +95,9 @@ The **loss curve** shows consistent convergence with minimal overfitting, sugges
 
 ## 📊 Model Performance Summary
 
+![Graph Images](images/image.png)
+
+
 | Metric         | Initial | Final  | Notes                            |
 |----------------|---------|--------|----------------------------------|
 | **Train Dice** | 0.55    | 0.87   | Strong improvement               |
