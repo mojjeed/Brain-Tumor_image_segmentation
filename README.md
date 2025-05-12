@@ -94,6 +94,7 @@ The **loss curve** shows consistent convergence with minimal overfitting, sugges
 ---
 
 ## 📊 Model Performance Summary
+![performance images](images/graph.png)
 
 ![Graph Images](images/image.png)
 
