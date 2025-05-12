@@ -21,18 +21,18 @@ Brain tumor segmentation is critical in neuro-oncology. Manual segmentation is t
 ---
 
 ## 🗂️ Project Structure
-brain-tumor-segmentation/
-├── data/                   # Dataset folder (MRI slices, segmentation masks)
-│   ├── raw/                # Raw BRATS data
-│   └── processed/          # Preprocessed images and masks
-├── models/                 # Trained model checkpoints
-├── notebooks/              # Jupyter notebooks for training, EDA, testing
-├── src/
-│   ├── dataloader.py       # Data loading and augmentation
-│   ├── model.py            # U-Net model architecture
-│   ├── train.py            # Training loop
-│   ├── evaluate.py         # Model evaluation
-│   └── infer.py            # Inference script
-├── outputs/                # Segmented output images
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+```mermaid
+graph TD
+    A[data/] --> A1[raw/]
+    A --> A2[processed/]
+    B[models/]
+    C[notebooks/]
+    D[src/] --> D1[dataloader.py]
+    D --> D2[model.py]
+    D --> D3[train.py]
+    D --> D4[evaluate.py]
+    D --> D5[infer.py]
+    E[outputs/]
+    F[requirements.txt]
+    G[README.md]
+
