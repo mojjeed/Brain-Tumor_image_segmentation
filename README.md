@@ -36,3 +36,27 @@ graph TD
     F[requirements.txt]
     G[README.md]
 
+
+## 🔍 Model Performance Analysis
+🧠 Dice Score (Left Graph)
+Definition: Measures the overlap between predicted and ground truth masks. A Dice score of 1 indicates perfect segmentation.
+
+Observations:
+
+Training Dice started at 0.55 and reached 0.87 over 20 epochs.
+
+Validation Dice climbed from 0.52 to 0.84, indicating strong generalization.
+
+The small gap between train and val curves suggests minimal overfitting — the model learns the tumor regions effectively and generalizes well to unseen data.
+
+📉 Loss (Right Graph)
+**Loss Function**: Custom Dice loss was used, designed to optimize for segmentation tasks where pixel-level imbalance exists.
+
+Observations:
+
+Training loss decreased from** 0.68 → 0.19.**
+
+Validation loss dropped similarly from 0.70 → 0.235, showing convergent training.
+
+The consistent downward trend supports that learning was stable and the optimizer was effective (Adam in this case).
+
